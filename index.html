@@ -1,164 +1,158 @@
+:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapex Enterprise AI | Global OmniFlow SaaS</title>
-    
-    <!-- Google Analytics Integration -->
-    <script async src="https://googletagmanager.com"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
-
-    <!-- Tailwind CSS & FontAwesome for International Premium UI -->
-    <script src="https://tailwindcss.com"></script>
+    <title>Chapex OmniFlow - Enterprise AI Automation Platform</title>
+    <!-- Tailwind CSS for Premium Dark UI -->
+    <script src="https://jsdelivr.net"></script>
     <link rel="stylesheet" href="https://cloudflare.com">
-    
     <style>
-        body {
-            background-color: #050505;
-            color: #f3f4f6;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow-x: hidden;
-        }
-        .neon-border {
+        .neon-glow {
             box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
-            border: 1px solid rgba(16, 185, 129, 0.3);
+            border: 1px solid rgba(16, 185, 129, 0.4);
         }
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
-        .gradient-text {
-            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(16, 185, 129, 0.3);
+            border-radius: 10px;
         }
     </style>
 </head>
-<body>
+<body class="bg-black text-gray-100 font-sans antialiased selection:bg-emerald-500 selection:text-black">
 
-    <!-- 1. PREMIUM HEADER / NAVIGATION -->
-    <nav class="glass-panel fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center">
+    <!-- Top Navigation Header -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-zinc-800 px-6 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-3">
-            <div class="h-10 w-10 bg-gradient-to-tr from-emerald-500 to-blue-600 rounded-xl flex items-center justify-center font-bold text-white tracking-wider">CH</div>
-            <span class="text-xl font-bold tracking-wide uppercase">Chapex <span class="text-emerald-500">OmniFlow</span></span>
+            <div class="bg-emerald-500 text-black font-black px-3 py-1 rounded text-lg tracking-wider">CH</div>
+            <span class="text-xl font-bold tracking-tight text-white">Chapex <span class="text-emerald-400">OmniFlow</span></span>
         </div>
-        <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
             <a href="#ecosystem" class="hover:text-emerald-400 transition">Ecosystem</a>
             <a href="#pricing" class="hover:text-emerald-400 transition">Global Rates</a>
-            <a href="#terminal" class="hover:text-emerald-400 transition">Cloud Engine</a>
-        </div>
-        <a href="https://wa.me" target="_blank" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium text-sm transition tracking-wide neon-border"><i class="fa-brands fa-whatsapp mr-2"></i>Deploy Now</a>
-    </nav>
+            <a href="#automation" class="hover:text-emerald-400 transition">Cloud Engine</a>
+        </nav>
+        <a href="#leadForm" class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs px-4 py-2 rounded-lg transition tracking-wide uppercase">Deploy Now</a>
+    </header>
 
-    <!-- 2. HERO SECTION -->
-    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto text-center">
-        <span class="px-4 py-1.5 glass-panel rounded-full text-xs font-semibold text-emerald-400 uppercase tracking-widest">Enterprise AI Automation Platform</span>
-        <h1 class="text-5xl md:text-7xl font-extrabold mt-6 tracking-tight leading-none">Automate Your Business into <br><span class="gradient-text">The Digital Empire</span></h1>
-        <p class="mt-6 text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">Production-ready omni-channel configurations powered by Angular, Supabase, Cloudflare, and automated Termux microservices. Achieve global scalability seamlessly.</p>
-        <div class="mt-10 flex flex-wrap justify-center gap-4">
-            <a href="#ecosystem" class="px-8 py-4 bg-gradient-to-r from-emerald-600 to-blue-600 rounded-xl font-semibold shadow-lg hover:opacity-90 transition">Explore Live Assets</a>
-            <a href="https://github.com" target="_blank" class="px-8 py-4 glass-panel rounded-xl font-semibold hover:bg-white/5 transition"><i class="fa-brands fa-github mr-2"></i>Source Code</a>
+    <!-- Main Hero Section -->
+    <main class="max-w-6xl mx-auto px-6 pt-16 pb-24 text-center">
+        <div class="inline-flex items-center space-x-2 bg-zinc-900 border border-zinc-800 text-zinc-400 px-4 py-1.5 rounded-full text-xs font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Enterprise AI Automation Platform</span>
         </div>
-    </section>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-none mb-6">
+            Automate Your Business into <br>
+            <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">The Digital Empire</span>
+        </h1>
+        <p class="text-zinc-400 max-w-2xl mx-auto text-base md:text-lg mb-8 leading-relaxed">
+            Production-ready omni-channel configurations powered by Angular, Supabase, Cloudflare, and automated Termux microservices. Achieve global scalability seamlessly.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mb-16">
+            <a href="#pricing" class="bg-emerald-500 hover:bg-emerald-400 text-black font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-emerald-500/20">Explore Live Assets</a>
+            <a href="https://github.com" target="_blank" class="glass-panel hover:bg-zinc-900 text-white font-medium px-6 py-3 rounded-xl transition border border-zinc-800">Source Code <i class="fab fa-github ml-1"></i></a>
+        </div>
 
-    <!-- 3. LIVE ECOSYSTEM HUB (YOUR DYNAMIC LINKS) -->
-    <section id="ecosystem" class="py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">Integrated <span class="text-emerald-500">Global Cluster Nodes</span></h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Dynamic Cluster Nodes Grid -->
+        <section id="ecosystem" class="text-left mb-24">
+            <h2 class="text-2xl font-bold text-white mb-8 tracking-tight"><i class="fas fa-network-wired text-emerald-400 mr-2"></i>Integrated Global Cluster Nodes</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-zinc-700 transition">
+                    <h3 class="text-lg font-bold text-white mb-2">Nexus Flow Core</h3>
+                    <p class="text-zinc-400 text-sm mb-4">Advanced UI frontend orchestrator for multi-channel business logic configurations.</p>
+                    <span class="text-xs text-emerald-400 font-mono flex items-center group-hover:underline cursor-pointer">Access Node <i class="fas fa-arrow-right ml-1 text-[10px]"></i></span>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-zinc-700 transition">
+                    <h3 class="text-lg font-bold text-white mb-2">Digital Empire Dashboard</h3>
+                    <p class="text-zinc-400 text-sm mb-4">Cloudflare-protected enterprise gateway showcasing full corporate portfolios.</p>
+                    <span class="text-xs text-emerald-400 font-mono flex items-center group-hover:underline cursor-pointer">Access Node <i class="fas fa-arrow-right ml-1 text-[10px]"></i></span>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-zinc-700 transition">
+                    <h3 class="text-lg font-bold text-white mb-2">Chapex Branding App</h3>
+                    <p class="text-zinc-400 text-sm mb-4">Interactive design intelligence workspace managing scalable B2B visual operations.</p>
+                    <span class="text-xs text-emerald-400 font-mono flex items-center group-hover:underline cursor-pointer">Access Node <i class="fas fa-arrow-right ml-1 text-[10px]"></i></span>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-zinc-700 transition">
+                    <h3 class="text-lg font-bold text-white mb-2">n8n Automation Flow</h3>
+                    <p class="text-zinc-400 text-sm mb-4">Automated webhooks and instant messaging infrastructure connecting data vector nodes.</p>
+                    <span class="text-xs text-emerald-400 font-mono flex items-center group-hover:underline cursor-pointer">Access Node <i class="fas fa-arrow-right ml-1 text-[10px]"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transparent B2B Global Pricing -->
+        <section id="pricing" class="text-left mb-24 border-t border-zinc-900 pt-16">
+            <h2 class="text-3xl font-extrabold text-white mb-2 tracking-tight text-center">Transparent B2B Global Pricing</h2>
+            <p class="text-zinc-500 text-sm mb-12 text-center">Scalable automation services tailored for instant global business onboarding.</p>
             
-            <!-- Node 1: Core Orchestrator -->
-            <div class="glass-panel p-6 rounded-2xl p-6 transition hover:-translate-y-1 duration-300">
-                <div class="h-12 w-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-layer-group"></i></div>
-                <h3 class="text-xl font-bold mb-2">Nexus Flow Core</h3>
-                <p class="text-gray-400 text-sm mb-4">Advanced UI frontend orchestrator for multi-channel business logic configurations.</p>
-                <a href="https://github.io" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold flex items-center">Access Node <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
-            </div>
-
-            <!-- Node 2: Executive Gateway -->
-            <div class="glass-panel p-6 rounded-2xl p-6 transition hover:-translate-y-1 duration-300">
-                <div class="h-12 w-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-network-wired"></i></div>
-                <h3 class="text-xl font-bold mb-2">Digital Empire Dashboard</h3>
-                <p class="text-gray-400 text-sm mb-4">Cloudflare-protected enterprise gateway showcasing full corporate portfolios.</p>
-                <a href="https://bolt.host" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-semibold flex items-center">Access Node <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
-            </div>
-
-            <!-- Node 3: Lovable App Deployment -->
-            <div class="glass-panel p-6 rounded-2xl p-6 transition hover:-translate-y-1 duration-300">
-                <div class="h-12 w-12 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-bezier-curve"></i></div>
-                <h3 class="text-xl font-bold mb-2">Chapex Branding App</h3>
-                <p class="text-gray-400 text-sm mb-4">Interactive design intelligence workspace managing scalable B2B visual operations.</p>
-                <a href="https://lovable.app" target="_blank" class="text-purple-400 hover:text-purple-300 text-sm font-semibold flex items-center">Access Node <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- 4. INTERNATIONAL PRICING MATRIX -->
-    <section id="pricing" class="py-20 bg-[#090909] border-y border-white/5 px-6">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-4">Transparent B2B Global Pricing</h2>
-            <p class="text-center text-gray-500 text-sm mb-12">Scalable automation services tailored for instant global business onboarding.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="glass-panel p-8 rounded-2xl relative">
-                    <h3 class="text-lg font-bold text-gray-400">Apex Branding Assets</h3>
-                    <div class="text-3xl font-extrabold mt-4">$20 <span class="text-sm font-normal text-gray-500">/ PKR 5,000</span></div>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>High-Res 3D Logo Designs</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Corporate Marketing Banners</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Unlimited Design Revisions</li>
-                    </ul>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2">Apex Branding Assets</h3>
+                        <div class="flex items-baseline space-x-2 mb-6">
+                            <span class="text-3xl font-bold text-white">$20</span>
+                            <span class="text-zinc-500 text-xs">/ PKR 5,000</span>
+                        </div>
+                        <ul class="space-y-3 text-zinc-400 text-sm">
+                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> High-Res 3D Logo Designs</li>
+                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Corporate Marketing Banners</li>
+                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Unlimited Design Revisions</li>
+                        </ul>
+                    </div>
+                    <a href="#leadForm" class="w-full text-center bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-white text-xs font-bold py-3 px-4 rounded-xl transition mt-8">Secure Blueprint</a>
                 </div>
-
-                <div class="glass-panel p-8 rounded-2xl border-emerald-500/40 neon-border relative">
-                    <span class="absolute -top-3 right-6 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-bold uppercase">Popular</span>
-                    <h3 class="text-lg font-bold text-white">Digital Empire Web + AI</h3>
-                    <div class="text-3xl font-extrabold mt-4">$55 <span class="text-sm font-normal text-gray-500">/ PKR 15,000</span></div>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-300">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Neon Glass Landing Infrastructure</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Supabase & Cloudflare Pipeline</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Intelligent Context-Aware Bot</li>
-                    </ul>
+                <!-- Card 2 -->
+                <div class="glass-panel p-8 rounded-2xl neon-glow flex flex-col justify-between relative">
+                    <div class="absolute -top-3 right-6 bg-emerald-500 text-black font-black uppercase text-[9px] px-2.5 py-0.5 rounded-full tracking-wider">Popular</div>
+                    <div>
+                        <h3 class="text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-2">Digital Empire Web + AI</h3>
+                        <div class="flex items-baseline space-x-2 mb-6">
+                            <span class="text-3xl font-bold text-white">$55</span>
+                            <span class="text-zinc-500 text-xs">/ PKR 15,000</span>
+                        </div>
+                        <ul class="space-y-3 text-zinc-400 text-sm">
+                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Neon Glass Landing Infrastructure</li>
+                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Supabase & Cloudflare Pipeline</li>
+                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Intelligent Context-Aware Bot</li>
+                        </ul>
+                    </div>
+                    <a href="#leadForm" class="w-full text-center bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-bold py-3 px-4 rounded-xl transition mt-8 shadow-md shadow-emerald-500/10">Deploy Architecture</a>
                 </div>
+                <!-- Card 3 -->
+                <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2">Media Broadcasting</h3>
+                        <div class="flex items-baseline space-x-2 mb-6">
+                            <span class="text-3xl font-bold text-white">$35</span>
 
-                <div class="glass-panel p-8 rounded-2xl relative">
-                    <h3 class="text-lg font-bold text-gray-400">Media Broadcasting</h3>
-                    <div class="text-3xl font-extrabold mt-4">$35 <span class="text-sm font-normal text-gray-500">/ PKR 10,000</span></div>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Breaking News Ticker Layers</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Premium Studio Visual Setups</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Lower Third Assets Production</li>
-                    </ul>
-                </div>
+/ PKR 10,000
 
-            </div>
-        </div>
-    </section>
 
-    <!-- 5. REALTIME LEAD INGESTION (SUPABASE & N8N READY CONNECTED FORM) -->
-    <section class="py-20 px-6 max-w-3xl mx-auto">
-        <div class="glass-panel p-8 rounded-3xl border border-white/5">
+Breaking News Ticker Layers
+Premium Studio Visual Setups
+Lower Third Assets Production
+
+
+Acquire Stack
+
 
 Initiate Global Automation
 Data fields route securely via webhook pipeline mechanisms directly into Supabase.
-
-[1, 2] 
-Ingest Data Payload
+Trigger Ingestion Agent
 
 
-© 2026 Chapex Branding Hub Ecosystem. All framework components engineered securely.
-Architect: Ch Mujahid Hussain | Senior AI Architect & Media Operations Manager
-Inquiries: chmujahid12619@gmail.com | Pipeline Node: +92 326 9447550
-[1] 
 
-Chapex Intelligent Conversational Node
+Chapex Intelligent Node
 
 
 Hello! Welcome to the Chapex Global Digital Empire. How can I assist you with your business automation or branding deployment today?
@@ -167,8 +161,9 @@ Hello! Welcome to the Chapex Global Digital Empire. How can I assist you with yo
 
 
 
-
-
+Payload © 2026 Chapex Branding Hub Ecosystem. All framework components engineered securely.
+Architect: Ch Mujahid Hussain | Senior AI Architect & Media Operations Manager
+Inquiries: chmujahid12619@gmail.com | Pipeline Node: +92 326 9447550
 // Form Ingestion Tracking (n8n Integration Placeholder Setup)
 document.getElementById('leadForm').addEventListener('submit', function(e) {
 e.preventDefault();
@@ -213,13 +208,13 @@ appendMessage("Understood. Your request query has been routed through our centra
 }
 sendBtn.addEventListener('click', () => {
 const val = chatInput.value.trim();
-if(!val) return;
+if (!val) return;
 appendMessage(val, true);
-chatInput.value = '';
+chatInput.value = "";
 handleBotResponse(val);
 });
 chatInput.addEventListener('keypress', (e) => {
-if(e.key === 'Enter') sendBtn.click();
+if (e.key === 'Enter') sendBtn.click();
 });
 // Microphone Voice Recognition Engine Setup
 if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
