@@ -1,146 +1,152 @@
-:
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapex OmniFlow - Enterprise AI Automation Platform</title>
-    <!-- Tailwind CSS for Premium Dark UI -->
+    <title>CH Chapex OmniFlow - Enterprise AI Automation Platform</title>
+    <!-- Tailwind CSS for Premium Global Styling -->
     <script src="https://jsdelivr.net"></script>
+    <!-- FontAwesome for Visual Anchor Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- SweetAlert2 for Premium Animated Notifications -->
+    <script src="https://jsdelivr.net"></script>
     <style>
         .neon-glow {
-            box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
-            border: 1px solid rgba(16, 185, 129, 0.4);
+            text-shadow: 0 0 10px rgba(16, 185, 129, 0.6), 0 0 20px rgba(16, 185, 129, 0.4);
         }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        ::-webkit-scrollbar {
+        .custom-scroll::-webkit-scrollbar {
             width: 6px;
         }
-        ::-webkit-scrollbar-thumb {
+        .custom-scroll::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
             background: rgba(16, 185, 129, 0.3);
-            border-radius: 10px;
+            border-radius: 4px;
         }
     </style>
 </head>
-<body class="bg-black text-gray-100 font-sans antialiased selection:bg-emerald-500 selection:text-black">
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen selection:bg-emerald-500 selection:text-white">
 
-    <!-- Top Navigation Header -->
-    <header class="sticky top-0 z-50 glass-panel border-b border-zinc-800 px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-3">
-            <div class="bg-emerald-500 text-black font-black px-3 py-1 rounded text-lg tracking-wider">CH</div>
-            <span class="text-xl font-bold tracking-tight text-white">Chapex <span class="text-emerald-400">OmniFlow</span></span>
+    <!-- Header / Navigation -->
+    <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50 px-4 lg:px-8 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="bg-emerald-500/10 text-emerald-400 p-2 rounded-xl border border-emerald-500/20 font-bold tracking-wider text-xl">CH</div>
+            <div>
+                <h1 class="font-black text-lg tracking-tight text-white">Chapex OmniFlow</h1>
+                <p class="text-xs text-emerald-400 font-medium tracking-widest uppercase">Ecosystem Global Rates</p>
+            </div>
         </div>
-        <nav class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
-            <a href="#ecosystem" class="hover:text-emerald-400 transition">Ecosystem</a>
-            <a href="#pricing" class="hover:text-emerald-400 transition">Global Rates</a>
-            <a href="#automation" class="hover:text-emerald-400 transition">Cloud Engine</a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
+            <a href="#features" class="hover:text-emerald-400 transition-colors">Cloud Engine</a>
+            <a href="#pricing" class="hover:text-emerald-400 transition-colors">Global Rates</a>
+            <a href="#contact" class="hover:text-emerald-400 transition-colors">Deploy Now</a>
         </nav>
-        <a href="#leadForm" class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs px-4 py-2 rounded-lg transition tracking-wide uppercase">Deploy Now</a>
+        <a href="#contact" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-all shadow-lg shadow-emerald-900/20 border border-emerald-400/20">Enterprise Platform</a>
     </header>
 
-    <!-- Main Hero Section -->
-    <main class="max-w-6xl mx-auto px-6 pt-16 pb-24 text-center">
-        <div class="inline-flex items-center space-x-2 bg-zinc-900 border border-zinc-800 text-zinc-400 px-4 py-1.5 rounded-full text-xs font-medium mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Enterprise AI Automation Platform</span>
-        </div>
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-none mb-6">
-            Automate Your Business into <br>
-            <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">The Digital Empire</span>
-        </h1>
-        <p class="text-zinc-400 max-w-2xl mx-auto text-base md:text-lg mb-8 leading-relaxed">
-            Production-ready omni-channel configurations powered by Angular, Supabase, Cloudflare, and automated Termux microservices. Achieve global scalability seamlessly.
+    <!-- Hero Section -->
+    <section class="relative px-4 lg:px-8 pt-20 pb-24 max-w-7xl mx-auto text-center overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.08),transparent_50%)]"></div>
+        <span class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs px-3 py-1 rounded-full font-medium mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Production-Ready Omni-Channel Configurations
+        </span>
+        <h2 class="text-4xl md:text-6xl font-black text-white tracking-tight max-w-4xl mx-auto mb-6 leading-tight">
+            Automate Your Business into <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 neon-glow">The Digital Empire</span>
+        </h2>
+        <p class="text-base md:text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Powered by Angular, Supabase, Cloudflare, and automated Termux microservices. Achieve premium global scalability seamlessly.
         </p>
-        <div class="flex flex-wrap justify-center gap-4 mb-16">
-            <a href="#pricing" class="bg-emerald-500 hover:bg-emerald-400 text-black font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-emerald-500/20">Explore Live Assets</a>
-            <a href="https://github.com" target="_blank" class="glass-panel hover:bg-zinc-900 text-white font-medium px-6 py-3 rounded-xl transition border border-zinc-800">Source Code <i class="fab fa-github ml-1"></i></a>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#pricing" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-6 py-3.5 rounded-xl transition-all shadow-xl shadow-emerald-900/30 text-sm">Explore Live Assets</a>
+            <a href="#contact" class="bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium px-6 py-3.5 rounded-xl transition-all border border-slate-800 text-sm">Source Code Integration</a>
+        </div>
+    </section>
+
+    <!-- Cluster Nodes / Features -->
+    <section id="features" class="px-4 lg:px-8 py-16 max-w-7xl mx-auto border-t border-slate-900">
+        <h3 class="text-2xl font-bold text-white mb-10 tracking-tight flex items-center gap-3">
+            <i class="fa-solid Nav-icon fa-cubes text-emerald-400"></i> Integrated Global Cluster Nodes
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Node 1 -->
+            <div class="bg-slate-900/40 border border-slate-900 p-6 rounded-2xl backdrop-blur-sm hover:border-emerald-500/20 transition-all group">
+                <div class="text-emerald-400 mb-4 text-xl"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                <h4 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Nexus Flow Core</h4>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Advanced UI frontend orchestrator for multi-channel business logic configurations.</p>
+                <span class="text-xs font-semibold text-emerald-400 tracking-wider uppercase block">Access Node &rarr;</span>
+            </div>
+            <!-- Node 2 -->
+            <div class="bg-slate-900/40 border border-slate-900 p-6 rounded-2xl backdrop-blur-sm hover:border-emerald-500/20 transition-all group">
+                <div class="text-emerald-400 mb-4 text-xl"><i class="fa-solid fa-chart-line"></i></div>
+                <h4 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Digital Empire Dashboard</h4>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Cloudflare-protected enterprise gateway showcasing full corporate portfolios.</p>
+                <span class="text-xs font-semibold text-emerald-400 tracking-wider uppercase block">Access Node &rarr;</span>
+            </div>
+            <!-- Node 3 -->
+            <div class="bg-slate-900/40 border border-slate-900 p-6 rounded-2xl backdrop-blur-sm hover:border-emerald-500/20 transition-all group">
+                <div class="text-emerald-400 mb-4 text-xl"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h4 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Chapex Branding App</h4>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Interactive design intelligence workspace managing scalable B2B visual operations.</p>
+                <span class="text-xs font-semibold text-emerald-400 tracking-wider uppercase block">Access Node &rarr;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="px-4 lg:px-8 py-16 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-white tracking-tight mb-2">Transparent B2B Global Pricing</h3>
+            <p class="text-sm text-slate-400">Scalable automation services tailored for instant global business onboarding.</p>
         </div>
 
-        <!-- Dynamic Cluster Nodes Grid -->
-        <section id="ecosystem" class="text-left mb-24">
-            <h2 class="text-2xl font-bold text-white mb-8 tracking-tight"><i class="fas fa-network-wired text-emerald-400 mr-2"></i>Integrated Global Cluster Nodes</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-zinc-700 transition">
-                    <h3 class="text-lg font-bold text-white mb-2">Nexus Flow Core</h3>
-                    <p class="text-zinc-400 text-sm mb-4">Advanced UI frontend orchestrator for multi-channel business logic configurations.</p>
-                    <span class="text-xs text-emerald-400 font-mono flex items-center group-hover:underline cursor-pointer">Access Node <i class="fas fa-arrow-right ml-1 text-[10px]"></i></span>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Tier 1 -->
+            <div class="bg-slate-900/30 border border-slate-900 rounded-2xl p-6 relative flex flex-col justify-between">
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-2">Apex Branding Assets</h4>
+                    <div class="mb-4">
+                        <span class="text-2xl font-black text-white">$20</span>
+                        <span class="text-slate-500 text-xs mx-1">/</span>
+                        <span class="text-emerald-400 font-bold text-sm">PKR 5,000</span>
+                    </div>
+                    <ul class="text-slate-400 text-xs space-y-3 mb-8 border-t border-slate-900 pt-4">
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> High-Res 3D Logo Designs</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Corporate Marketing Banners</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Unlimited Design Revisions</li>
+                    </ul>
                 </div>
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-zinc-700 transition">
-                    <h3 class="text-lg font-bold text-white mb-2">Digital Empire Dashboard</h3>
-                    <p class="text-zinc-400 text-sm mb-4">Cloudflare-protected enterprise gateway showcasing full corporate portfolios.</p>
-                    <span class="text-xs text-emerald-400 font-mono flex items-center group-hover:underline cursor-pointer">Access Node <i class="fas fa-arrow-right ml-1 text-[10px]"></i></span>
-                </div>
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-zinc-700 transition">
-                    <h3 class="text-lg font-bold text-white mb-2">Chapex Branding App</h3>
-                    <p class="text-zinc-400 text-sm mb-4">Interactive design intelligence workspace managing scalable B2B visual operations.</p>
-                    <span class="text-xs text-emerald-400 font-mono flex items-center group-hover:underline cursor-pointer">Access Node <i class="fas fa-arrow-right ml-1 text-[10px]"></i></span>
-                </div>
-                <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group hover:border-zinc-700 transition">
-                    <h3 class="text-lg font-bold text-white mb-2">n8n Automation Flow</h3>
-                    <p class="text-zinc-400 text-sm mb-4">Automated webhooks and instant messaging infrastructure connecting data vector nodes.</p>
-                    <span class="text-xs text-emerald-400 font-mono flex items-center group-hover:underline cursor-pointer">Access Node <i class="fas fa-arrow-right ml-1 text-[10px]"></i></span>
-                </div>
+                <a href="#contact" class="w-full text-center bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold py-3 rounded-xl border border-slate-800 transition-colors">Secure Blueprint</a>
             </div>
-        </section>
 
-        <!-- Transparent B2B Global Pricing -->
-        <section id="pricing" class="text-left mb-24 border-t border-zinc-900 pt-16">
-            <h2 class="text-3xl font-extrabold text-white mb-2 tracking-tight text-center">Transparent B2B Global Pricing</h2>
-            <p class="text-zinc-500 text-sm mb-12 text-center">Scalable automation services tailored for instant global business onboarding.</p>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2">Apex Branding Assets</h3>
-                        <div class="flex items-baseline space-x-2 mb-6">
-                            <span class="text-3xl font-bold text-white">$20</span>
-                            <span class="text-zinc-500 text-xs">/ PKR 5,000</span>
-                        </div>
-                        <ul class="space-y-3 text-zinc-400 text-sm">
-                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> High-Res 3D Logo Designs</li>
-                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Corporate Marketing Banners</li>
-                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Unlimited Design Revisions</li>
-                        </ul>
+            <!-- Tier 2 (Popular) -->
+            <div class="bg-slate-900/50 border-2 border-emerald-500/50 rounded-2xl p-6 relative flex flex-col justify-between shadow-2xl shadow-emerald-950/20">
+                <span class="absolute -top-3 right-6 bg-emerald-500 text-slate-950 font-black text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full">Popular</span>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-2">Digital Empire Web + AI</h4>
+                    <div class="mb-4">
+                        <span class="text-2xl font-black text-white">$55</span>
+                        <span class="text-slate-500 text-xs mx-1">/</span>
+                        <span class="text-emerald-400 font-bold text-sm">PKR 15,000</span>
                     </div>
-                    <a href="#leadForm" class="w-full text-center bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-white text-xs font-bold py-3 px-4 rounded-xl transition mt-8">Secure Blueprint</a>
+                    <ul class="text-slate-400 text-xs space-y-3 mb-8 border-t border-slate-900 pt-4">
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Neon Glass Landing Infrastructure</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Supabase & Cloudflare Pipeline</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Intelligent Context-Aware Bot</li>
+                    </ul>
                 </div>
-                <!-- Card 2 -->
-                <div class="glass-panel p-8 rounded-2xl neon-glow flex flex-col justify-between relative">
-                    <div class="absolute -top-3 right-6 bg-emerald-500 text-black font-black uppercase text-[9px] px-2.5 py-0.5 rounded-full tracking-wider">Popular</div>
-                    <div>
-                        <h3 class="text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-2">Digital Empire Web + AI</h3>
-                        <div class="flex items-baseline space-x-2 mb-6">
-                            <span class="text-3xl font-bold text-white">$55</span>
-                            <span class="text-zinc-500 text-xs">/ PKR 15,000</span>
-                        </div>
-                        <ul class="space-y-3 text-zinc-400 text-sm">
-                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Neon Glass Landing Infrastructure</li>
-                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Supabase & Cloudflare Pipeline</li>
-                            <li><i class="fas fa-check text-emerald-400 mr-2"></i> Intelligent Context-Aware Bot</li>
-                        </ul>
-                    </div>
-                    <a href="#leadForm" class="w-full text-center bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-bold py-3 px-4 rounded-xl transition mt-8 shadow-md shadow-emerald-500/10">Deploy Architecture</a>
-                </div>
-                <!-- Card 3 -->
-                <div class="glass-panel p-8 rounded-2xl flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-zinc-400 text-xs font-semibold uppercase tracking-wider mb-2">Media Broadcasting</h3>
-                        <div class="flex items-baseline space-x-2 mb-6">
-                            <span class="text-3xl font-bold text-white">$35</span>
 
-/ PKR 10,000
+Deploy Architecture
+Media Broadcasting
+
+$35
+/
+PKR 10,000
 
 
 Breaking News Ticker Layers
 Premium Studio Visual Setups
-Lower Third Assets Production
+Lower Third Production Assets
 
 
 Acquire Stack
@@ -153,6 +159,8 @@ Trigger Ingestion Agent
 
 
 Chapex Intelligent Node
+Active & Secure
+
 
 
 Hello! Welcome to the Chapex Global Digital Empire. How can I assist you with your business automation or branding deployment today?
@@ -161,18 +169,38 @@ Hello! Welcome to the Chapex Global Digital Empire. How can I assist you with yo
 
 
 
-Payload © 2026 Chapex Branding Hub Ecosystem. All framework components engineered securely.
-Architect: Ch Mujahid Hussain | Senior AI Architect & Media Operations Manager
-Inquiries: chmujahid12619@gmail.com | Pipeline Node: +92 326 9447550
-// Form Ingestion Tracking (n8n Integration Placeholder Setup)
+
+
+
+
+© 2026 Chapex Branding Hub Ecosystem. All framework components engineered securely.
+Architect: Ch Mujahid Hussain | Senior AI Architect & Investigator
+// Form Ingestion Architecture (n8n Integration Placeholder Setup)
 document.getElementById('leadForm').addEventListener('submit', function(e) {
 e.preventDefault();
+const name = document.getElementById('clientName').value.trim();
+const whatsapp = document.getElementById('clientWhatsApp').value.trim();
+const details = document.getElementById('projectDetails').value.trim();
 const data = {
-name: document.getElementById('clientName').value,
-phone: document.getElementById('clientWhatsApp').value,
-details: document.getElementById('projectDetails').value
+name: name,
+phone: whatsapp,
+details: details,
+timestamp: new Date().toISOString()
 };
-alert('Data vector packaged and triggered toward automation webhook pipeline! Content: ' + JSON.stringify(data));
+// Premium SweetAlert2 integration replacing raw alert()
+Swal.fire({
+title: 'Data Vector Packaged!',
+text: 'Triggered toward automation webhook pipeline!',
+icon: 'success',
+background: '#0b1329',
+color: '#f8fafc',
+confirmButtonColor: '#059669',
+iconColor: '#10b981',
+customClass: {
+popup: 'border border-slate-800 rounded-2xl'
+}
+});
+console.log('Ingestion Payload Triggered:', JSON.stringify(data));
 this.reset();
 });
 // Chatbot Interface Dynamics
@@ -183,24 +211,32 @@ const chatInput = document.getElementById('chatInput');
 const sendBtn = document.getElementById('sendBtn');
 const chatOutput = document.getElementById('chatOutput');
 const voiceBtn = document.getElementById('voiceBtn');
-botToggle.addEventListener('click', () => chatWindow.classList.toggle('hidden'));
-chatClose.addEventListener('click', () => chatWindow.classList.add('hidden'));
+botToggle.addEventListener('click', () => {
+chatWindow.classList.toggle('hidden');
+if (!chatWindow.classList.contains('hidden')) chatInput.focus();
+});
+chatClose.addEventListener('click', () => {
+chatWindow.classList.add('hidden');
+});
 function appendMessage(text, isUser = false) {
 const msg = document.createElement('div');
-msg.className = isUser
-? "bg-emerald-600 rounded-2xl px-4 py-2.5 max-w-[85%] ml-auto text-white"
-: "bg-white/5 rounded-2xl px-4 py-2.5 max-w-[85%] text-gray-300";
+if (isUser) {
+msg.className = "bg-emerald-600 rounded-2xl rounded-tr-none p-3 max-w-[85%] ml-auto text-white shadow-md leading-relaxed";
+} else {
+msg.className = "bg-white/5 border border-white/5 rounded-2xl rounded-tl-none p-3 max-w-[85%] text-slate-200 leading-relaxed";
+}
 msg.innerText = text;
 chatOutput.appendChild(msg);
 chatOutput.scrollTop = chatOutput.scrollHeight;
 }
-function handleBotResponse(input) {
-const query = input.toLowerCase();
+function handleBotResponse(val) {
+// Intelligent Automated Context Engine Mapping
 setTimeout(() => {
-if (query.includes('price') || query.includes('rate') || query.includes('cost')) {
-appendMessage("Our core options include: Branding Hub Assets at $20, Web and AI Infrastructure System at $55, and Broadcasting Tickers at $35.");
-} else if (query.includes('contact') || query.includes('whatsapp') || query.includes('phone')) {
-appendMessage("You can interface directly with our primary operational architect Ch Mujahid Hussain on WhatsApp Business at +92 326 9447550.");
+const lowerText = val.toLowerCase();
+if (lowerText.includes('price') || lowerText.includes('rate') || lowerText.includes('pkr')) {
+appendMessage("Our core structures start from $20 (PKR 5,000) for Branding Assets up to $55 (PKR 15,000) for complete Web + AI infrastructures. You can review details in the pricing layer.");
+} else if (lowerText.includes('whatsapp') || lowerText.includes('contact') || lowerText.includes('phone')) {
+appendMessage("Secure multi-channel communications node routed directly via WhatsApp Business at +92 326 9447550.");
 } else {
 appendMessage("Understood. Your request query has been routed through our central Chapex Core Engine context layer.");
 }
@@ -216,7 +252,7 @@ handleBotResponse(val);
 chatInput.addEventListener('keypress', (e) => {
 if (e.key === 'Enter') sendBtn.click();
 });
-// Microphone Voice Recognition Engine Setup
+// Microphone Voice Recognition Engine Setup (HTML5 Web Speech API Integration)
 if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
@@ -225,20 +261,23 @@ recognition.interimResults = false;
 recognition.lang = 'en-US';
 voiceBtn.addEventListener('click', () => {
 recognition.start();
-voiceBtn.classList.add('bg-emerald-500/30', 'text-emerald-400');
+// Visual indicators using modern Tailwind classes
+voiceBtn.classList.add('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40');
 });
 recognition.onresult = (event) => {
 const speechToText = event.results[0][0].transcript;
 chatInput.value = speechToText;
-voiceBtn.classList.remove('bg-emerald-500/30', 'text-emerald-400');
+// Visual cleanup & automatic activation
+voiceBtn.classList.remove('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40');
 sendBtn.click();
 };
 recognition.onerror = () => {
-voiceBtn.classList.remove('bg-emerald-500/30', 'text-emerald-400');
+voiceBtn.classList.remove('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40');
 };
 recognition.onend = () => {
-voiceBtn.classList.remove('bg-emerald-500/30', 'text-emerald-400');
+voiceBtn.classList.remove('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40');
 };
 } else {
+// Hide or handle gracefully if browser lacks API infrastructure
 voiceBtn.style.display = 'none';
 }
